@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation | Mohammed Ameen Ahmed </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+
+    <!--Header section-->
+    <header >
+        <nav class=" navbar-dark bg-dark" style="height: 5%;" >
+          <h1 style="text-align: center;">  Regestration Form! </h1>
+            
+            
+        </nav>
+    </header>
+
+    <!--header section end-->
+
+
+    <div class="container ">
+        <h2 class="text-center">Registration Form</h2>
+        <form id="registrationForm" enctype="multipart/form-data">
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="fullName">Full Name <span class="text">*</span></label>
+                <input type="text" class="form-control" id="fullName" required>
+                <small class="form-text text-danger" id="nameError"></small>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email ID <span class="text">*</span></label>
+                <input type="email" class="form-control" id="email" required>
+                <small class="form-text text-danger" id="emailError"></small>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+                <label for="phone">Phone Number <span class="text">*</span></label>
+                <input type="text" class="form-control" id="phone" required>
+                <small class="form-text text-danger" id="phoneError"></small>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password <span class="text">*</span></label>
+                <input type="password" class="form-control" id="password" required>
+                <small class="form-text text-danger" id="passwordError"></small>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password <span class="text">*</span></label>
+                <input type="password" class="form-control" id="confirmPassword" required>
+                <small class="form-text text-danger" id="confirmPasswordError"></small>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+                <label>Gender</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="other" value="Other">
+                    <label class="form-check-label" for="other">Other</label>
+                </div>
+                <small class="form-text text-danger" id="genderError"></small>
+            </div>
+
+            <!-- Feedback -->
+            <div class="form-group">
+                <label for="feedback">Feedback</label>
+                <textarea class="form-control" id="feedback" rows="3"></textarea>
+                <small class="form-text text-danger" id="feedbackError"></small>
+            </div>
+
+            <!-- Resume Upload -->
+            <div class="form-group">
+                <label for="resume">Upload Resume</label>
+                <input type="file" class="form-control-file" id="resume" accept=".pdf, .doc, .docx">
+                <small class="form-text text-danger" id="resumeError"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+    <footer class="end">
+        <p class="love">Made with <span style="color: #e25555;">&hearts;</span> by <a href="https://www.linkedin.com/in/ameen-ahmed-08b945292"><span> Mohammed Ameen Ahmed </span></a></p>
+        <div class="share">
+            <a href="https://www.linkedin.com/in/ameen-ahmed-08b945292" target="_blank"><img src="./logos/link_in.jpeg" alt="Share on LinkedIn"></a>
+            <a href="https://www.instagram.com/ameen_ahmed67?igsh=ZXM4d3gzbzNuNzB5"><img src="./logos/instagram_png.png" alt="Share on Instagram"></a>
+            <a href="https://wa.me/qr/BXEPOJ4HXFYWF1"><img src="./logos/whatsapp_png.png" alt="Share on WhatsApp"></a>
+        </div>
+    
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

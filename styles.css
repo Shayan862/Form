@@ -1,0 +1,252 @@
+/* Make sure HTML and body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply background to body */
+body {
+    background-color: hsla(200,40%,30%,.4);
+    background-image:   
+      url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+      url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+      url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+      url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+      url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+    background-repeat: repeat-x;
+    background-position: 
+      0 20%,
+      0 100%,
+      0 50%,
+      0 100%,
+      0 0;
+    background-size: 
+      2500px,
+      800px,
+      500px 200px,
+      1000px,
+      400px 260px;
+    animation: para 50s infinite linear;
+}
+
+/* Parallax animation */
+@keyframes para {
+    100% {
+      background-position: 
+        -5000px 20%,
+        -800px 95%,
+        500px 50%,
+        1000px 100%,
+        400px 0;
+    }
+}
+
+/* Form container styles */
+.container {
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8); /* White form background with opacity */
+    margin: 50px auto; /* Center horizontally and add space from top */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+/* Form styles
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+} */
+
+
+
+
+
+
+header {
+    background-color: #0c0d0d;
+    padding: 10px 0;
+    
+}
+header h1 {
+    color: white !important;
+    
+}
+
+
+/* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+/* body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+} */
+
+/* Container styling */
+/* .container {
+    max-width: 700px;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+} */
+
+/* Heading styling */
+h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.form-group label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input and textarea styling */
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+/* Error message styling */
+.form-text.text-danger {
+    font-size: 14px;
+    color: #dc3545;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Gender section styling */
+.form-check-inline {
+    margin-right: 20px;
+}
+
+/* Feedback textarea styling */
+textarea.form-control {
+    height: 120px;
+    resize: vertical;
+}
+
+.text{
+    color: #dc3545;
+}
+
+/* Footer Styles */
+footer.end {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer.end .love {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer.end .love a {
+    color: #e25555; /* Link color matching the heart */
+    text-decoration: none;
+}
+
+footer.end .love a:hover {
+    text-decoration: underline;
+}
+
+footer.end .share {
+    margin-top: 10px;
+}
+
+footer.end .share a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer.end .share img {
+    width: 32px;
+    height: 32px;
+    /* Optional: Adjust filter if icons are not visible */
+    /* filter: invert(1); */
+}
+
+/* Adjust link colors in the footer */
+footer.end a {
+    color: white;
+}
+
+footer.end a:hover {
+    color: #ccc;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
